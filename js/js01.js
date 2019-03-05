@@ -109,15 +109,27 @@ console.log(hap3(40, 50));
 // 리턴함수의 예제
 function ampm(h) {
 	if(h < 12) {
-		return "오전 " + h + "시";
+		return "오전 " + h + "시 ";
 	}
 	else {
-		return "오후 " + (h - 12) + "시";
+		return "오후 " + (h - 12) + "시 ";
 	}
 }
+function date(d) {
+	return d.getFullYear() + "년 " + (d.getMonth() + 1) + "월 " + d.getDate() + "일 ";
+}
+function time(d) {
+	return ampm(d.getHours()) + d.getMinutes() + "분 " + d.getSeconds() + "초";
+}
+
 var d = new Date();
 console.log(d);
 console.log(d.getHours());
 console.log(ampm(d.getHours()));
+
+var nowDate = date(d);
+var nowTime = time(d);
+console.log(nowDate + nowTime);
+$("#cmt").html(nowDate + nowTime);
 
 
