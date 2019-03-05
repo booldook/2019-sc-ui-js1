@@ -130,6 +130,13 @@ console.log(ampm(d.getHours()));
 var nowDate = date(d);
 var nowTime = time(d);
 console.log(nowDate + nowTime);
-$("#cmt").html(nowDate + nowTime);
+//$("#cmt").html(nowDate + nowTime);
+document.getElementById("cmt").innerHTML = nowDate + nowTime;
 
-
+// 초기화 버튼
+//var btReset = document.getElementById("bt_reset");
+document.getElementById("bt_reset").addEventListener("click", function() {
+	var d = new Date();
+	var cmt = document.getElementById("cmt");
+	cmt.innerHTML = date(d) + time(d);
+});
