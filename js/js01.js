@@ -107,5 +107,17 @@ function hap3(x, y) {
 console.log(hap3(40, 50));
 
 // 리턴함수의 예제
+function ampm(h) {
+	if(h < 12) {
+		return "오전 " + h + "시";
+	}
+	else {
+		return "오후 " + (h - 12) + "시";
+	}
+}
+var d = new Date();
+console.log(d);
+console.log(d.getHours());
+console.log(ampm(d.getHours()));
 
 
