@@ -67,18 +67,33 @@ console.log(body);
 
 // 함수 - function
 // +, -, *, /(10/3 => 3), %(mod: 10%3 => 1)
+/*
+function 함수명(인자/매개변수:parameter) {
+
+}
+*/
 var x = 5;
+// 매개변수가 없는 함수 / 리턴값이 없는 함수(void)
 function multi() {
 	console.log(x * x);
 }
 multi();
 
+// 매개변수가 있는 함수 / 리턴값이 없는 함수(void)
 function multi2(x) {
 	console.log("함수 안의 x 는 " + x);
 	console.log(x * x);
 }
 console.log("함수 밖의 x 는 " + x);
 multi2(25);
+
+// 매개변수가 여러개인 함수 / 리턴값이 없는 함수(void)
+function hap(x, y) {
+	console.log(x + "와 " + y + "의 합은 " + (x + y) + "입니다.");
+}
+hap(25, 34);
+
+
 
 
 
