@@ -93,7 +93,19 @@ function hap(x, y) {
 }
 hap(25, 34);
 
+// 리턴값이 있는 함수
+function hap2(x, y) {
+	var c = x + y;
+	return c;
+}
+var d = hap2(20, 30);
+console.log(d);
 
+function hap3(x, y) {
+	return x + y;
+}
+console.log(hap3(40, 50));
 
+// 리턴함수의 예제
 
 
