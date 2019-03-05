@@ -27,4 +27,58 @@ $("#bt2").click(function(){
 	$("#cmt").html("가상현실을 선택!");
 });
 
+// 변수
+// 변수에는 모든것을 담을 수 있다. (숫자, 문자, 객체-html, css 등등 모든 것)
+var a;	//var a = 10;
+
+a = 10;
+console.log(a);
+
+a = 20;
+console.log(a);
+
+var b = 30;
+console.log(a, b, a + b);
+
+var c = a + b;
+console.log(c);
+
+var t1 = 10;
+var t2 = 20;
+var t3 = "30";
+var t4 = t1 + t2 + t3;		//3030(문자)
+var t5 = t3 + t1 + t2;		//301020(문자)
+var t6 = t3 + (t1 + t2);	//3030(문자)
+console.log(t4);
+console.log(t5);
+console.log(t6);
+
+var bt1 = document.getElementById("bt1");
+console.log(bt1);
+
+var $bt1 = $("#bt1");
+console.log($bt1);
+
+var doc = document;
+console.log(doc);
+
+var body = doc.body;
+console.log(body);
+
+// 함수 - function
+// +, -, *, /(10/3 => 3), %(mod: 10%3 => 1)
+var x = 5;
+function multi() {
+	console.log(x * x);
+}
+multi();
+
+function multi2(x) {
+	console.log("함수 안의 x 는 " + x);
+	console.log(x * x);
+}
+console.log("함수 밖의 x 는 " + x);
+multi2(25);
+
+
 
