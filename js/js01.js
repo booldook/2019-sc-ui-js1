@@ -1,20 +1,21 @@
 /*
 Programming Language(프로그래밍 언어)
 	. Web/FrontEnd
-		- Javascript
+		- Javascript ES5/ES6 (jQuery)
 	. Web/BackEnd
+		- Javascript ES6 (Node.js)
 		- PHP
 		- Java
 		- c#
 		- Python
 	. Application
-		- Java
-		- Swift 
-		- Python
-		- VisualBasic
-		- C
-		- C++
-		- c#
+		- Java -> Android App
+		- Swift -> iPhone App
+		- Python	-> Java를 대체하는 언어
+		- VisualBasic -> 간단한 윈도우즈용 프로그램.
+		- C++ -> 복잡한 윈도우즈용 프로그램.
+		- C -> IOT(사물인터넷)
+		- c# -> windows7 이상 프로그램
 */
 document.getElementById("bt1").addEventListener("click", function(){
 	alert("Hello Real World");
