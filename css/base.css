@@ -1,0 +1,11 @@
+/* font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
+
+html, body {margin: 0; padding: 0; box-sizing: border-box; font-size: 16px; font-family: 'Noto Sans KR', sans-serif; color: #222;}
+
+div, p, ul, li, dl, dd, dt, h1, h2, h3, h4, h5, h6, header, footer, main, section, aside, article, nav {margin: 0; padding: 0; box-sizing: border-box;}
+
+ul, li {list-style: none;}
+
+.img {width: 100%;}
+.clear:after {clear: both; content: ""; display: block;}

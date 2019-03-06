@@ -1,3 +1,8 @@
+// 2019. 03. 06 까지 배운 내용
+// JS 내장함수: window.alert(), document.getElementById(), console.log(), focus(), addEventListener(): 이벤트함수
+// JQ 내장함수: html(), click(): 이벤트함수
+
+
 // id를 통한 접근 ES6
 //f = document.querySelector("#form1");
 
