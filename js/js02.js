@@ -50,12 +50,10 @@ console.log($result);
 
 // Simple 사칙연산 - JS
 bt1.addEventListener("click", function() {
-	var x = v1.value;
-	var y = v2.value;
-	var c = calc.value;
-	alert(x);
-	alert(y);
-	alert(c);
+	var x = v1.value;	//10
+	var y = v2.value;	//20
+	var c = calc.value;	//*
+	result.value = eval(x + c + y);
 });
 
 
