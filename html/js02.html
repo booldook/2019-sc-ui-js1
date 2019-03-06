@@ -20,17 +20,18 @@
 		</div>
 		<form action="#" name="form1" id="form1" class="form-inline">
 			<div class="form-group">
-				<input type="text" name="val1" id="val1" class="form-control w3-show-inline-block">
+				<input type="number" name="val1" id="val1" class="form-control w3-show-inline-block">
 				<select name="calc" id="calc" class="form-control w3-show-inline-block">
 					<option value="">선택</option>
-					<option value="+">+</option>
-					<option value="-">-</option>
-					<option value="/">/</option>
-					<option value="*">*</option>
+					<option value="+">더하기</option>
+					<option value="-">빼기</option>
+					<option value="/">나누기</option>
+					<option value="*">곱하기</option>
 				</select>
-				<input type="text" name="val2" id="val2" class="form-control w3-show-inline-block">
-				<button type="button" class="btn btn-danger" id="bt1" name="bt1">계산 =></button>
-				<input type="text" name="result" id="result" class="form-control w3-show-inline-block">
+				<input type="number" name="val2" id="val2" class="form-control w3-show-inline-block">
+				<button type="button" class="btn btn-success" id="bt1" name="bt1">계산 =></button>
+				<input type="text" name="result" id="result" class="form-control w3-show-inline-block" readonly>
+				<button type="button" class="btn btn-danger" id="bt_reset" name="bt_reset">초기화</button>
 			</div>
 		</form>
 	</div>

@@ -1,4 +1,4 @@
 input {transform: translateY(-1px);}
 button {transform: translateY(-2px);}
 #form1 input {width: 100px; text-align: center;}
-#form1 select {width: 80px; text-align: center;}
+#form1 select {width: 100px; text-align: center;}
