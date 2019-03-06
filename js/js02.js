@@ -77,6 +77,21 @@ else {
 
 // Simple 사칙연산 - JS
 bt1.addEventListener("click", function(){
+	if(v1.value == "") {
+		alert("첫번째 숫자를 입력하세요.");
+		v1.focus();
+		return;
+	}
+	if(v2.value == "") {
+		alert("두번째 숫자를 입력하세요.");
+		v2.focus();
+		return;
+	}
+	if(calc.value == "") {
+		alert("연산방식을 선택하세요.");
+		calc.focus();
+		return;
+	}
 	var x = v1.value;	//10
 	var y = v2.value;	//20
 	var c = calc.value;	//*
