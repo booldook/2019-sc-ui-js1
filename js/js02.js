@@ -48,6 +48,15 @@ console.log($calc);
 console.log($bt1);
 console.log($result);
 
+// Simple 사칙연산 - JS
+bt1.addEventListener("click", function() {
+	var x = v1.value;
+	var y = v2.value;
+	var c = calc.value;
+	alert(x);
+	alert(y);
+	alert(c);
+});
 
 
 
