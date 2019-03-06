@@ -140,3 +140,4 @@ document.getElementById("bt_reset").addEventListener("click", function() {
 	var cmt = document.getElementById("cmt");
 	cmt.innerHTML = date(d) + time(d);
 });
+
