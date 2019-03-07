@@ -1,3 +1,2 @@
-.pic_b {width: 500px; height: 500px; text-align: center; border: 5px solid #eee; 
-	margin: 24px auto;}
+.pic_b {width: 500px; height: 500px; text-align: center; border: 5px solid #eee; margin: 24px auto; overflow: hidden;}
 .thumbs {width: 500px; margin: auto;}
