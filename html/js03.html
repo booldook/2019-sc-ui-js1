@@ -20,7 +20,7 @@
 		</div>
 		<div class="form_grp">
 			<form action="#" name="form1">
-				<input type="text" name="val1" id="val1" class="my_input">
+				<input type="number" name="val1" id="val1" class="my_input">
 				<select name="calc" id="calc" class="my_select">
 					<option value="">선택</option>
 					<option value="+">더하기</option>
@@ -28,10 +28,10 @@
 					<option value="*">곱하기</option>
 					<option value="/">나누기</option>
 				</select>
-				<input type="text" name="val2" id="val2" class="my_input">
-				<button type="button" class="my_button my_success">계산=></button>
-				<input type="text" name="result" id="result" class="my_input" readonly>
-				<button type="button" class="my_button my_danger">초기화</button>
+				<input type="number" name="val2" id="val2" class="my_input">
+				<button type="button" id="bt_calc" class="my_button my_success">계산=></button>
+				<input type="number" name="result" id="result" class="my_input" readonly>
+				<button type="reset" class="my_button my_danger">초기화</button>
 			</form>
 		</div>
 	</div>
