@@ -1,0 +1,3 @@
+$(".thumbs img").click(function(){
+	
+});
