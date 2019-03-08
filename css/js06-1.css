@@ -1,2 +1,6 @@
 #cnt {width: 60px;}
 .horse {width: 200px;}
+
+#bt_init {}
+#bt_start {display: none;}
+#bt_reset {display: none;}
