@@ -1,5 +1,12 @@
 #cnt {width: 60px;}
 .horse {width: 200px; position: relative;}
+@keyframes horse {
+	0% {transform: rotate(15deg);}
+	50% {transform: rotate(-15deg);}
+	100% {transform: rotate(15deg);}
+}
+
+
 .horse > .badge {padding: 5px 10px 7px 10px; background-color: #000; position: absolute; left: 40%;}
 
 #bt_init {}
