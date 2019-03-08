@@ -1,1 +1,4 @@
-.box {width: 100px; height: 100px; font-size:1rem; border: 5px solid aquamarine; background-color: cadetblue; line-height: 90px; color: cornsilk;}
+/*
+position: static(정적), absolute(절대적인), relative(관계를 가진), fixed(고정)
+*/
+.box {width: 100px; height: 100px; position: relative; left: 0; font-size:1rem; border: 5px solid aquamarine; background-color: cadetblue; line-height: 90px; color: cornsilk;}
