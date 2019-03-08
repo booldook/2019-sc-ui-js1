@@ -1,5 +1,6 @@
 #cnt {width: 60px;}
-.horse {width: 200px;}
+.horse {width: 200px; position: relative;}
+.horse > .badge {padding: 5px 10px 7px 10px; background-color: #000; position: absolute; left: 40%;}
 
 #bt_init {}
 #bt_start {display: none;}

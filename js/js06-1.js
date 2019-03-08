@@ -9,6 +9,26 @@ for(var i=1, sum=0; i<=10; i++){
 console.log(sum);
 */
 
+//준비
+$("#bt_init").click(function(){
+	var cnt = $("#cnt").val();
+	for(var i=0, horse; i<cnt; i++) {
+		horse = '<div class="horse"><div class="badge">'+(i+1)+'</div><img src="../img/horse.png" class="img"></div>';
+		$(".stage").append(horse);
+	}
+	$("#bt_init").hide();
+	$("#bt_start").show();
+	$("#bt_reset").show();
+});
+
+//초기화
+$("#bt_reset").click(function(){
+	//$(".stage").html("");
+	$(".stage").empty();
+	$("#bt_start").hide();
+	$("#bt_reset").hide();
+	$("#bt_init").show();
+	$("#cnt").val("4");
+});
 
 
-var horse = '<div class="horse"><img src="../img/horse.png" class="img"></div>';
