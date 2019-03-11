@@ -15,6 +15,7 @@ i = i + '<br>' ==> i += '<br>';
 
 $("#bt1").click(function(){
 	$("#stage").empty();
+	$("#stage2").empty();
 	var c = '';
 	for(var i=0; i<10; i++) {
 		c += "*"; 			//c = c + "*";
@@ -23,7 +24,6 @@ $("#bt1").click(function(){
 });
 
 $("#bt2").click(function(){
-	$("#stage").empty();
 	var html = '<table class="table table-bordered table-hover">';
 	html += '<thead>';
 	html += '<tr>';
@@ -42,10 +42,24 @@ $("#bt2").click(function(){
 	}
 	html += '</tbody>';
 	html += '</table>';
-	$("#stage").append(html);
+	$("#stage").html(html);
 });
 
-
+$("#bt3").click(function(){
+	var html = '<table class="table table-bordered table-hover">';
+	html += '<tbody>';
+	for(var i=2; i<=9; i++) {
+		html += '<tr>';
+		for(var j=0; j<=9; j++) {
+			if(j == 0) html += '<td><strong>'+i+ ' 단</strong></td>';
+			html += '<td>'+i+ ' x '+j+' = '+i*j+'</td>';
+		}
+		html += '</tr>';
+	}
+	html += '</tbody>';
+	html += '</table>';
+	$("#stage2").html(html);
+});
 
 
 
