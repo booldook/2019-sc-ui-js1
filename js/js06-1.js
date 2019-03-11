@@ -17,8 +17,14 @@ console.log(Math.round(4.6))	=>	5
 console.log(Math.ceil(4.2))	=>	5
 4. Math.floor(숫자)	=> 버림
 console.log(Math.ceil(4.9))	=>	4
-*/
 
+배열
+var arr = [];
+arr[0] = 2;
+arr[1] = 3;
+arr[2] = 101;
+*/
+//console.log(	Math.floor(Math.random() * 6) + 5	);
 
 //준비
 var cnt = 0;
@@ -45,7 +51,10 @@ $("#bt_reset").click(function(){
 
 // 시작
 $("#bt_start").click(function(){
+	var speed = [];
 	for(var i=0; i<cnt; i++) {
-		$(".horse").eq(i).stop().animate({"left":"100%"}, 5000);
+		speed[i] = Math.floor(Math.random()*2001) + 3000;
+		$(".horse").eq(i).stop().animate({"left":"100%"}, speed[i]);
 	}
+	console.log(speed);
 });
