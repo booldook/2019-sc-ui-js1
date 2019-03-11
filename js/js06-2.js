@@ -32,8 +32,14 @@ $("#bt2").click(function(){
 	}
 	html += '</tr>';
 	html += '</thead>';
+	html += '<tbody>';
+	html += '<tr>';
+	for(var i=2; i<=9; i++) {
+		html += '<td>'+i+ ' x 1 = '+i*1+'</td>';
+	}
+	html += '</tr>';
+	html += '</tbody>';
 	html += '</table>';
-	console.log(html);
 	$("#stage").append(html);
 });
 
