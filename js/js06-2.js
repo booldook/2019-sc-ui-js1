@@ -24,7 +24,7 @@ $("#bt1").click(function(){
 
 $("#bt2").click(function(){
 	$("#stage").empty();
-	var html = '<table class="table table-bordered">';
+	var html = '<table class="table table-bordered table-hover">';
 	html += '<thead>';
 	html += '<tr>';
 	for(var i=2; i<=9; i++) {
@@ -33,11 +33,13 @@ $("#bt2").click(function(){
 	html += '</tr>';
 	html += '</thead>';
 	html += '<tbody>';
-	html += '<tr>';
-	for(var i=2; i<=9; i++) {
-		html += '<td>'+i+ ' x 1 = '+i*1+'</td>';
+	for(var j=1; j<=9; j++) {
+		html += '<tr>';
+		for(var i=2; i<=9; i++) {
+			html += '<td>'+i+ ' x '+j+' = '+i*j+'</td>';
+		}
+		html += '</tr>';
 	}
-	html += '</tr>';
 	html += '</tbody>';
 	html += '</table>';
 	$("#stage").append(html);
