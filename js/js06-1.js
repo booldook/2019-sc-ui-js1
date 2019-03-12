@@ -51,10 +51,10 @@ $("#bt_reset").click(function(){
 
 // 시작
 $("#bt_start").click(function(){
-	var speed = [];
+	var rank = [];
+	var speed = 0;
 	for(var i=0; i<cnt; i++) {
-		speed[i] = Math.floor(Math.random()*2001) + 3000;
-		$(".horse").eq(i).stop().animate({"left":"100%"}, speed[i]);
+		speed = Math.floor(Math.random()*2001) + 3000;
+		$(".horse").eq(i).stop().animate({"left":"100%"}, speed);
 	}
-	console.log(speed);
 });

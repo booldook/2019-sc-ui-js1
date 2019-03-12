@@ -62,10 +62,12 @@ $("#bt3").click(function(){
 
 $("#bt4").click(function(){
 	var sNum = prompt("구구단의 원하는 단수를 입력하세요.");
-	for(var i=1, h=''; i<=9; i++) {
+	var h = '<tr>';
+	for(var i=1; i<=9; i++) {
 		h += '<td>'+sNum+' x '+i+' = '+sNum*i+'</td>';
 	}
-	$("#stage2 > table > tbody > tr").html(h);
+	h += '</tr>';
+	$("#stage2 > table > tbody").append(h);
 });
 
 
