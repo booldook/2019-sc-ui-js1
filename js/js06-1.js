@@ -55,6 +55,17 @@ $("#bt_start").click(function(){
 	var speed = 0;
 	for(var i=0; i<cnt; i++) {
 		speed = Math.floor(Math.random()*2001) + 3000;
-		$(".horse").eq(i).stop().animate({"left":"100%"}, speed);
+		$(".horse").eq(i).stop().animate({"left":"100%"}, speed, function(){
+			rank.push($(this).index());
+			if(rank.length == cnt) {
+				console.log(rank);
+				for(var i=0, h=''; i<rank.length; i++) {
+					h += '<p>'+(i+1)+'등 : '+(rank[i]+1)+'번</p>';
+				}
+				$(".modal-body").html(h);
+				$("#myModal").modal();
+			}
+		});
 	}
 });
+
