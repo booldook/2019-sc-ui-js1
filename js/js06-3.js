@@ -88,4 +88,17 @@ $("#bt1").click(function(){
 	score.push(Number($("#in3").val()));
 	score.push(Math.round((score[1] + score[2] + score[3])/3));
 	console.log(score);
+	var html = '<tr>';
+	html+= '<td class="text-center">'+score[0]+'</td>';
+	html+= '<td class="text-center">'+score[1]+'</td>';
+	html+= '<td class="text-center">'+score[2]+'</td>';
+	html+= '<td class="text-center">'+score[3]+'</td>';
+	html+= '<td class="text-center">'+score[4]+'</td>';
+	html+= '<td class="text-center">삭제</td>';
+	html += '</tr>';
+	$("#tb_score").append(html);
+	$("#in0").val("");
+	$("#in1").val("");
+	$("#in2").val("");
+	$("#in3").val("");
 });
