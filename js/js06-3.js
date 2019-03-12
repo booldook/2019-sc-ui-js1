@@ -75,5 +75,17 @@ $("#bt1").click(function(){
 		$("#in3").focus();
 		return;
 	}
+	/*
+	score[0] = $("#in0").val();
+	score[1] = $("#in1").val();
+	score[2] = $("#in2").val();
+	score[3] = $("#in3").val();
+	score[4] = Math.round((score[0] + socre[1] + score[2])/3);
+	*/
 	score.push($("#in0").val());
+	score.push(Number($("#in1").val()));
+	score.push(Number($("#in2").val()));
+	score.push(Number($("#in3").val()));
+	score.push(Math.round((score[1] + score[2] + score[3])/3));
+	console.log(score);
 });
