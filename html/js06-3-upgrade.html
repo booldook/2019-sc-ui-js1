@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>배열을 알아보자</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/normalize.css">
+	<link rel="stylesheet" href="../css/js06-3-upgrade.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container w3-margin-top">
+		<div class="well"><h3>성적관리프로그램-upgrade</h3></div>
+	</div>
+	<div class="form-inline container w3-padding-32">
+		<input type="text" class="form-control ins" id="in0" placeholder="이름" data-info="이름을">
+		<input type="number" class="form-control ins" id="in1" placeholder="국어" data-info="국어점수를">
+		<input type="number" class="form-control ins" id="in2" placeholder="영어" data-info="영어점수를">
+		<input type="number" class="form-control ins" id="in3" placeholder="수학" data-info="수학점수를">
+		<button type="button" class="btn btn-primary" id="bt1">저장</button>
+	</div>
+	<div class="container">
+		<table class="table table-bordered table-hover">
+			<thead>
+				<tr>
+					<th class="text-center">이름</th>
+					<th class="text-center">국어</th>
+					<th class="text-center">영어</th>
+					<th class="text-center">수학</th>
+					<th class="text-center">총점</th>
+					<th class="text-center">비고</th>
+				</tr>
+			</thead>
+			<tbody id="tb_score">
+
+			</tbody>
+		</table>
+	</div>
+	<script src="../js/js06-3-upgrade.js"></script>
+</body>
+
+</html>
