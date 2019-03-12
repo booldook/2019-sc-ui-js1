@@ -15,7 +15,6 @@ i = i + '<br>' ==> i += '<br>';
 
 $("#bt1").click(function(){
 	$("#stage").empty();
-	$("#stage2").empty();
 	var c = '';
 	for(var i=0; i<10; i++) {
 		c += "*"; 			//c = c + "*";
@@ -58,9 +57,15 @@ $("#bt3").click(function(){
 	}
 	html += '</tbody>';
 	html += '</table>';
-	$("#stage2").html(html);
+	$("#stage").html(html);
 });
 
-
+$("#bt4").click(function(){
+	var sNum = prompt("구구단의 원하는 단수를 입력하세요.");
+	for(var i=1, h=''; i<=9; i++) {
+		h += '<td>'+sNum+' x '+i+' = '+sNum*i+'</td>';
+	}
+	$("#stage2 > table > tbody > tr").html(h);
+});
 
 
